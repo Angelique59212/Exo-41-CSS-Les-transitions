@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#container2 {
+    width: 20rem;
+    height: 20rem;
+    background-color: black;
+    transition: background-color, width, height;
+    transition-delay: 500ms;
+    transition-duration: 6s;
+    transition-timing-function: ease-in-out;
+}
+
+#container2:hover {
+    background-color: lightgrey;
+    width: 30rem;
+    height: 30rem;
+}
+
+#container3 {
+    width: 20rem;
+    height: 20rem;
+    font-size: 1.3rem;
+    color: purple;
+    transition: color, font-size;
+    transition-delay: 200ms;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+}
+
+#container3:hover {
+   font-size: 1.8rem;
+    color: blue;
+}
+
+@media screen and (max-width:320px){
+    #container2, #container3 {
+        width: 100%;
+    }
+}
